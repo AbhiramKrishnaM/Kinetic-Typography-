@@ -10,13 +10,13 @@ class App{
               families: ['Hind:700']
             },
             fontactive: () => {
-                this.text = new Text();
-                this.text.setText(
-                    'AK',
-                    2,
-                    document.body.clientWidth,
-                    document.body.clientHeight,   
-                );
+                // this.text = new Text();
+                // this.text.setText(
+                //     'AK',
+                //     20,
+                //     document.body.clientWidth,
+                //     document.body.clientHeight,   
+                // );
             }
           });
 
