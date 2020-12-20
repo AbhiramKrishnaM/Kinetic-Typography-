@@ -20,7 +20,7 @@ class App{
             fontactive: () => {
                 // this.text = new Text();
                 // this.text.setText(
-                //     'AK',
+                //     'a',
                 //     20,
                 //     document.body.clientWidth,
                 //     document.body.clientHeight,   
@@ -64,10 +64,11 @@ class App{
     resize(){
         this.stageWidth = document.body.clientWidth;
         this.stageHeight = document.body.clientHeight;
+
         this.canvas.width = this.stageWidth * this.pixelRatio;
         this.canvas.height = this.stageHeight * this.pixelRatio;
         this.ctx.scale(this.pixelRatio, this.pixelRatio);
-        this.pos = this.text.setText('AK', 6, this.stageWidth, this.stageHeight);
+        this.pos = this.text.setText('AK', 20, this.stageWidth, this.stageHeight);
     }
     animate(t){
         requestAnimationFrame(this.animate.bind(this));
